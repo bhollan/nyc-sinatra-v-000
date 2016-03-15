@@ -1,0 +1,17 @@
+<h3>Landmarks</h3>
+<table>
+  <tr>
+    <th>Landmark</th>
+    <th>Year Completed</th>
+    <th>"Historical" Figure</th>
+  </tr>
+<% Landmark.all.each do |landmark| %>
+  <tr>
+    <td><a href='/landmarks/<%= landmark.id %>'><%= landmark.name %></a></td>
+    <td><%= landmark.year_completed %></td>
+    <% if !landmark.figure.nil? %>
+      <td><%= landmark.figure.name %></td>
+    <% end %>
+  </tr>
+<% end %>
+</table>

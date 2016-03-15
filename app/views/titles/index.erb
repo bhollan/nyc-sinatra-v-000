@@ -1,0 +1,11 @@
+<h3>Titles</h3>
+<table>
+  <tr>
+    <th>Title</th>
+  </tr>
+<% Title.all.each do |title| %>
+  <tr>
+    <td><a href='/titles/<%= title.id %>'><%= title.name %></a></td>
+  </tr>
+<% end %>
+</table>

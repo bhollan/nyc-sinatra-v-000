@@ -6,5 +6,9 @@
   <tr>
     <td><%= @landmark.name %></td>
     <td><%= @landmark.year_completed %></td>
+    <td><%= @landmark.figure %></td>
   </tr>
 <table>
+  <form method='GET' action='/landmarks/<%= @landmark.id %>/edit'>
+    <input type='submit' value='Edit Landmark'>
+  </form>

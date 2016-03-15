@@ -69,3 +69,4 @@ title_list.each do |name, figure_hash|
   p.name = name
   p.save
 end
+

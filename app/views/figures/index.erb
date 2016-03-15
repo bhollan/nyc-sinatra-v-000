@@ -1,0 +1,13 @@
+<h3>Figures</h3>
+<table>
+  <tr>
+    <th>Figures</th>
+    <th>Title(s) held</th>
+  </tr>
+<% Figure.all.each do |figure| %>
+  <tr>
+    <td><a href='/figures/<%= figure.id %>'><%= figure.name %></a></td>
+    <td><%= figure.titles %></td>
+  </tr>
+<% end %>
+</table>
